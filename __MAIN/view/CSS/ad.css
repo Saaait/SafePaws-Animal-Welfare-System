@@ -1,0 +1,191 @@
+/* hero section top*/
+.hero {
+    background-image: url('../Images/1st.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    /* Added horizontal padding for smaller screens */
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* hero section bottom */
+.hero-bottom {
+    background-image: url('../Images/6th.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-bottom h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-bottom p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* feature section */
+.feature {
+    text-align: center;
+    flex: 1;
+    /* Equal width for features */
+    min-width: 150px;
+    /* Minimum width for smaller screens */
+    margin: 2rem;
+    color: #1a3b5d;
+}
+
+.features {
+    display: flex;
+    /* Ensure features are in a row */
+    flex-wrap: wrap;
+    /* Wrap to next line on smaller screens */
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem auto;
+    color: #1a3b5d;
+    max-width: 600px;
+}
+
+.feature img {
+    width: 260px;
+    height: 180px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature:hover {
+    color: #ff6b6b;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+/* How It Works Section */
+.how-it-works {
+    padding: 50px 20px;
+    background-color: fff5e6;
+    text-align: center;
+    color: #1a3b5d;
+}
+
+.how-it-works h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #1a3b5d;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.step {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.step:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.step-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.step h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: #666;
+    font-size: 16px;
+}
+
+
+.testimonial {
+    background-color: #ff6b6b;
+    padding: 50px 20px;
+    text-align: center;
+    color: #1a3b5d;
+}
+
+.testimonial-item {
+    display: none;
+}
+
+.testimonial-item.active {
+    display: block;
+    /* Show active testimonial */
+}
+
+.testimonial q {
+    font-style: italic;
+    font-size: 18px;
+    display: block;
+    margin: 20px 0;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+        /* Adjusted for smaller size screen */
+        /*Don't know will work or not */
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+}
+
+/* General link styling to remove underline and change color */
+a {
+    text-decoration: none;
+    color: inherit;
+    /* Use the same color as surrounding text */
+}

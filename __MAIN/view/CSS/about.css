@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f4ee;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #1a3b5d;
+    margin: 2rem 0;
+    font-size: 2.5rem;
+}
+
+.about-us {
+    max-width: 800px;
+    /* Adjust based on your layout */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.founders {
+    display: flex;
+    /* Align founders side by side */
+    justify-content: space-around;
+    /* Space them evenly */
+    margin: 20px 0;
+    /* Add margin above and below */
+}
+
+.founder {
+    max-width: 300px;
+    text-align: center;
+}
+
+.founder-image {
+    width: 100%;
+    /* Responsive images */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 50%;
+}
+
+h2 {
+    color: #1a3b5d;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+
+p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0.5rem 0;
+}
+
+/* Ensure footer text remains white */
+footer,
+footer p,
+footer .footer-contact a {
+    color: white !important;
+}

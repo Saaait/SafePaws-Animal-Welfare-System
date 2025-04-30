@@ -1,0 +1,44 @@
+
+.adoption-section {
+    padding: 20px; 
+    text-align: center; /* Center the section content */
+}
+
+.adoption-list {
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    justify-content: center; /* Center items horizontally */
+    margin-bottom: 50px;
+}
+
+.adoption-item {
+    margin: 0 20px;
+}
+
+.item-container {
+    width: 200px; /* Set a fixed width for the image container */
+    height: 250px; /* Set a fixed height for the image container */
+    overflow: hidden; /* Hide overflow */
+    position: relative; 
+    transition: transform 0.3s;
+}
+
+.item-container:hover {
+    transform: scale(1.1); /* Scale up the item on hover */
+}
+
+
+.item-container img {
+    width: 100%; /* Fill the container width */
+    height: 70%; /* Fill the container height */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    display: block;
+}
+
+.item-container h2 {
+    position: relative;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%); 
+    padding: 5px;
+}

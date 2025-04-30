@@ -1,0 +1,273 @@
+/* User Info Section/for greetings under nav bar */
+.user-info-nav {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    /* Space from the navigation items */
+}
+
+.user-info-nav span {
+    color: #fff;
+    font-weight: bold;
+    margin-right: 1rem;
+    /* Space between username and logout */
+}
+
+.logout-button {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #ff4b4b;
+}
+
+/* User Info Section */
+.user-info {
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 1200px;
+    background-color: #fff5e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    /* Using flexbox */
+    flex-direction: column;
+    /* Stack children vertically */
+    align-items: center;
+    /* Center items horizontally */
+}
+
+h1 {
+    text-align: center;
+    color: #1a3b5d;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+.users-table {
+    width: 100%;
+    /* Full width for responsiveness */
+    max-width: fit-content;
+    /* keeps table center */
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-left: 42px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: block;
+    /* Allows horizontal scroll on small screens */
+}
+
+.users-table h1 {
+    color: #1a3b5d;
+}
+
+thead {
+    background-color: #1a3b5d;
+    color: #ffffff;
+}
+
+th,
+td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+tbody tr:hover {
+    background-color: #f8f8f8;
+}
+
+td {
+    color: #333;
+}
+
+td a {
+    text-decoration: none;
+}
+
+/* Button Styles */
+.users-table .edit-button,
+.users-table .delete-button {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.users-table .edit-button {
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.users-table .edit-button:hover {
+    background-color: #45a049;
+}
+
+.users-table .delete-button {
+    background-color: #ff6b6b;
+    color: white;
+    margin-left: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.users-table .delete-button:hover {
+    background-color: #ff4b4b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .user-info {
+        padding: 10px;
+    }
+
+    .users-table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+    .edit-button,
+    .delete-button {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
+/* Smaller Screen Adjustments */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    /* Stack buttons vertically on very small screens */
+    .edit-button,
+    .delete-button {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+        /* Adds spacing between stacked buttons */
+    }
+}
+
+
+/* Edit Form Modal */
+#edit-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: none;
+}
+
+/* Close Button */
+#edit-form .close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#edit-form .close-button:hover {
+    color: #1a3b5d;
+    /* Accent color on hover */
+}
+
+/* Modal Title */
+#edit-form h2 {
+    font-size: 24px;
+    color: #1a3b5d;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+#edit-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Labels and Input Fields */
+#edit-form label {
+    font-size: 16px;
+    color: #333;
+}
+
+#edit-form input[type="text"],
+#edit-form input[type="email"],
+#edit-form input[type="password"] {
+    padding: 10px;
+    /* Increased padding for better touch targets */
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+#edit-form input:focus {
+    border-color: #1a3b5d;
+}
+
+/* Submit Button */
+#edit-form button[type="submit"] {
+    padding: 12px;
+    font-size: 16px;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#edit-form button[type="submit"]:hover {
+    background: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    #edit-form h2 {
+        font-size: 20px;
+    }
+
+    #edit-form button[type="submit"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #edit-form .close-button {
+        font-size: 20px;
+        /* Smaller close button on mobile */
+    }
+}

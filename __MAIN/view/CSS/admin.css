@@ -1,0 +1,82 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content section styling */
+.user-report-section {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.user-report-section h1 {
+    margin-bottom: 40px; 
+    color: #1a3b5d;
+}
+
+/* Container for boxes */
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual info box styling */
+.info-box {
+    width: 300px;
+    height: 80px;
+    border: 2px solid #1a3b5d;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+/* Hover effect for info boxes */
+.info-box:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Style for headings within info boxes */
+.info-box h2 {
+    color: #1a3b5d;
+    margin: 0;
+}
+
+/* Remove underline for links in info boxes */
+.info-box a {
+    text-decoration: none; 
+    color: inherit; /* Inherit the color from .info-box h2 */
+}
+
+/* Responsive Design */
+
+/* Adjust layout for tablets and small screens */
+@media (max-width: 768px) {
+    .info-box {
+        width: 90%; /* Wider boxes on smaller screens */
+        max-width: 300px; /* Set a maximum width */
+        margin: 10px; /* Margin around each box */
+    }
+}
+
+/* Stack boxes vertically on very small screens */
+@media (max-width: 480px) {
+    .info-box {
+        width: 95%; /* Make boxes take up more width */
+        max-width: none; /* Remove max width */
+    }
+
+    .box-container {
+        flex-direction: column; /* Stack boxes vertically */
+        align-items: center; /* Center boxes in the column */
+    }
+}

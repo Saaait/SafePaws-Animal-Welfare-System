@@ -1,0 +1,125 @@
+/* Main styles */
+main {
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    background-color: #f8f4ee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Centered content for blog entries */
+.centered-content {
+    max-width: 800px;
+    /* Sets a maximum width for the blog entries */
+    width: 100%;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog entries styles */
+.blog-entries article {
+    background: transparent;
+    /* Removes the background color */
+    border: none;
+    padding: 1.5rem 0;
+    margin: 1rem 0;
+    /* Margin between articles */
+}
+
+.blog-entries h2 {
+    color: #1a3b5d;
+    font-size: 1.8rem;
+}
+
+.blog-entries p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Resource links section */
+.resource-links {
+    display: flex;
+    /* Use flexbox for horizontal layout */
+    overflow-x: auto;
+    /* Enable horizontal scrolling on small screens */
+    padding: 20px 0;
+    scroll-snap-type: x mandatory;
+    /* Optional: Add snap effect for better UX */
+}
+
+/* Resource card styles */
+.resource-card {
+    flex: 0 0 200px;
+    margin-right: 15px;
+    scroll-snap-align: start;
+    /* Align items when scrolling */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.resource-card:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Resource image styles */
+.resource-image {
+    width: 100%;
+    /* Image takes full width of the card */
+    height: 150px;
+    object-fit: cover;
+    /* Maintain aspect ratio */
+    border-radius: 8px 8px 0 0;
+}
+
+/* Heading and paragraph styles within resource cards */
+.resource-card h3 {
+    color: #1a3b5d;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+
+.resource-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.resource-link {
+    font-weight: bold;
+    color: #1a3b5d;
+    margin-top: 0.5rem;
+}
+
+/* Link styles */
+.resource-card a {
+    text-decoration: none;
+    color: inherit;
+    /* Inherits the color of the parent element */
+}
+
+/* Styles for larger screens */
+@media (min-width: 768px) {
+    .resource-links {
+        overflow-x: visible;
+        /* Disable horizontal scrolling on larger screens */
+        flex-wrap: wrap;
+    }
+
+    .resource-card {
+        flex: 0 0 calc(33.333% - 15px);
+        /* 3 cards per row with margin */
+        margin-right: 15px;
+        margin-bottom: 20px;
+    }
+
+    .resource-card:last-child {
+        margin-right: 0;
+        /* Remove right margin for the last card */
+    }
+}

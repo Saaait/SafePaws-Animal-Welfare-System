@@ -1,0 +1,61 @@
+/* Training and Grooming Section Styles */
+
+.training-grooming-section {
+    padding: 49px 20px;
+    text-align: center;
+    background-color: #FFF5E6;
+}
+
+.training-grooming-section h1 {
+    font-size: 20px;
+    color: #010101;
+    margin-bottom: 30px;
+}
+
+/* Container to center the service boxes */
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Service Box Design */
+.service-box {
+    width: 200px;
+    height: 250px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #FFF5E6;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+}
+
+.service-box img {
+    width: 100%;
+    height: 150px;
+    /* Slightly smaller height for the image */
+    object-fit: cover;
+}
+
+.service-box h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #000000;
+
+}
+
+.service-box a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+    border-color: #999;
+}

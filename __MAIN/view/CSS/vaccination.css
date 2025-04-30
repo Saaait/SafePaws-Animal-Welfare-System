@@ -1,0 +1,68 @@
+.vaccination-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff5e6;
+    color: #333; 
+}
+
+.vaccination-list {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; 
+}
+
+.vaccination-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.vaccination-divider {
+    width: 100%; 
+    height: 1px;
+    background-color: #ddd; /* Color of the dividing line */
+    margin: 10px 0; 
+}
+
+.vaccination-item h2 {
+    margin: 0;
+    color: #333;
+    flex: 1; 
+}
+
+/* Button styles */
+.vaccination-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6b6b; /* Button color */
+    color: white;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s;
+}
+
+.vaccination-button:hover {
+    background-color: #ff4b4b; /* Darker shade on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .vaccination-item {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+    
+    .vaccination-button {
+        width: 100%; /* Full width for buttons on small screens */
+        margin-top: 10px; /* Space above button */
+    }
+}

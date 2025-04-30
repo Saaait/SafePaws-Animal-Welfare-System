@@ -1,0 +1,50 @@
+/* Adog.css */
+
+.adoption-section {
+    padding: 20px;
+}
+
+.adoption-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.adoption-item {
+    flex: 1;
+    /* Allow items to grow and fill available space equally */
+    max-width: 30%;
+    margin: 0 10px;
+    position: relative;
+}
+
+.item-container {
+    overflow: hidden;
+    /* Hide overflow to prevent scrollbar */
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.item-container:hover {
+    transform: scale(1.05);
+}
+
+/* Set fixed dimensions for images */
+.item-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the area */
+    display: block;
+}
+
+.item-container h2 {
+    position: relative;
+    bottom: 10px;
+    /* Position text at the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+
+}

@@ -1,0 +1,144 @@
+button{ display: block;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    background-color: #ff6b6b;
+    border-radius: 5px;
+    border:none;
+    transition: background-color 0.3s;}
+    button:hover{background-color: #ff4b4b; cursor: pointer;}
+
+    /* Modal Styles */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    position: relative;
+    text-align: center;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #ff4b4b;
+}
+
+/* form style */
+.signuph2{color:#ff6b6b ;}
+.or-line {
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+#fpassword {
+    font-size: 14px;
+    color: black;
+}
+
+#fpassword:hover {
+    font-size: 14px;
+    color: #ff4b4b;
+    transition: 0.5s;
+}
+
+#createacc {
+    font-size: 14px;
+    color: black;
+}
+
+#createacc:hover {
+    font-size: 14px;
+    color: #ff4b4b;
+    transition: 0.5s;
+}
+
+input[type="text"], input[type="password"], input[type="submit"], [type="email"], [type="number"], [type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #ff6b6b;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff4b4b;
+    transition: 0.5s;
+}
+
+.fa-square-instagram {
+    margin-top: 15px;
+    font-size: 25px;
+    background-image: linear-gradient(#833ab4,#fd1d1d,#fcb045);
+    background-clip: text;
+    color: transparent;
+}
+
+.fa-square-facebook {
+    margin-top: 15px;
+    margin-left: 5px;
+    font-size: 25px;
+    color: #316FF6;
+}
+
+.fa-square-instagram:hover {
+    color: #ff4b4b;
+    transition: 0.3s;
+}
+
+.fa-square-facebook:hover {
+    color: #ff4b4b;
+    transition: 0.3s;
+}
+
+
+/* Error message styling */
+.error-message, .error-message-login {
+    color: red;
+    font-size: 14px;
+}
+
+/* switch to signup/login */
+
+#switch-to-login{text-decoration: none; color: black;}
+#switch-to-signup{text-decoration: none; color: black;}
+#switch-to-login:hover{color: #ff4b4b;}
+#switch-to-signup:hover{color: #ff4b4b;}

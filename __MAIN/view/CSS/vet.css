@@ -1,0 +1,68 @@
+/* CSS for Vet Support Page */
+
+.vet-support-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff5e6; /* Match background color with previous pages */
+    color: #333; /* Match text color with previous pages */
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.service-box {
+    margin: 20px;
+    text-align: center;
+    width: 250px; /* Set a width for the service box */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    background-color: #fff5e6;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+}
+
+.service-box img {
+    width: 100%; /* Makes image fill the box width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensures aspect ratio is maintained while covering the area */
+}
+
+.service-box h2 {
+    color: #333;
+    margin: 10px 0;
+}
+
+.service-box p {
+    color: #666;
+    padding: 2 10px;
+}
+
+/* Remove underline from links */
+a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Makes link color inherit from parent element */
+}
+
+.service-box a {
+    color: #333; /* Set a consistent color for links inside service boxes */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .service-box {
+        width: 100%; /* Make boxes full width on smaller screens */
+        max-width: 300px; /* Limit max width */
+    }
+
+    .service-box img {
+        height: auto; /* Allows height to adjust automatically */
+    }
+}

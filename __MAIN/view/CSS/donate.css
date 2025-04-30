@@ -1,0 +1,65 @@
+.donate-section {
+    padding: 50px 20px;
+    background-color: #fff5e6; /* Light background for contrast */
+    text-align: center;
+}
+
+.donate-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #1a3b5d; /* Dark blue color for the heading */
+}
+
+/* Flexbox for responsive layout */
+.donate-box-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of boxes on smaller screens */
+    justify-content: center; /* Center the boxes horizontally */
+}
+
+.donate-box {
+    flex: 0 0 220px; /* Fixed width for boxes */
+    margin: 15px; 
+    text-align: center;
+    border: 1px solid #ddd; /* Light border around the boxes */
+    border-radius: 8px;
+    padding: 10px; /* Reduced padding for a cleaner look */
+    background-color: white; /* White background for the boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Hide overflow to keep images within the box */
+    transition: box-shadow 0.3s;
+}
+
+.donate-box:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.donate-box img {
+    width: auto; 
+    max-width: 100%; /* Ensure the image does not exceed the box width */
+    max-height: 120px;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the entire image is visible */
+    margin-bottom: 10px;
+    border-radius: 4px; 
+}
+
+.donate-box a {
+    text-decoration: none;
+    color: #1a3b5d; /* Dark blue color for links */
+    font-weight: bold;
+    display: block; /* Ensure the link takes the full width */
+    margin-top: 10px;
+}
+
+/* Styles for larger screens */
+@media (min-width: 768px) {
+    .donate-box {
+        flex: 0 0 calc(33.333% - 30px);
+        margin-right: 15px; /* Space between boxes */
+    }
+
+    .donate-box:last-child {
+        margin-right: 0; /* Remove right margin for the last box */
+    }
+}
